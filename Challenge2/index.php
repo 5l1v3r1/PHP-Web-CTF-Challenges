@@ -1,4 +1,5 @@
 <?php
+echo 'test'
 $dev = $_GET['number'];
 $flag = "FLAG{YOU-SOLVED-YOUR-SECOND-CHALLENGE}"
 if (isset($dev)) {
