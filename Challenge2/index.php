@@ -6,14 +6,14 @@ if (isset($dev)) {
 		if (!strpos($dev, ".")){
 			if (strlen($dev) > 6){
 				if ($dev < 99999 && $dev > 90000)
-				die('<div class="alert"> Flag: '.$flag.' </div>');
+				echo 'Flag:  '.$flag.);
 				else
-				print '<div class="alert">Oh Oh Think again</div>';
+				echo  'Oh Oh Think again';
 			} else
-				print '<h1>Wrong Move Champ</h1>';
+				echo 'Wrong Move Champ';
 		} else
-		print '<h1>Not That hard . keep trying</h1>';	
+		echo 'Not That hard . keep trying';	
 	} else
-		print '</h1>Just read the source code once again</h1>';
+		echo 'Just read the source code once again';
 }
 ?>
