@@ -1,21 +1,19 @@
-test here 
 <?php
-echo 'test'
 $dev = $_GET['number'];
-$flag = "FLAG{YOU-SOLVED-YOUR-SECOND-CHALLENGE}"
+$flag = "FLAG{YOU-SOLVED-YOUR-SECOND-CHALLENGE}";
 if (isset($dev)) {
 	if (is_numeric($dev)){
 		if (!strpos($dev, ".")){
 			if (strlen($dev) > 6){
 				if ($dev < 99999 && $dev > 90000)
-				echo 'Flag:  '.$flag.);
+				echo 'Flag:  '.$flag;
 				else
-				echo  'Oh Oh Think again';
+				print '<div class="alert">Oh Oh Think again</div>';
 			} else
-				echo 'Wrong Move Champ';
+				print '<h1>Wrong Move Champ</h1>';
 		} else
-		echo 'Not That hard . keep trying';	
+		print '<h1>Not That hard . keep trying</h1>';	
 	} else
-		echo 'Just read the source code once again';
+		print '</h1>Just read the source code once again</h1>';
 }
 ?>
