@@ -4,9 +4,9 @@ flag = FLAG{CREDIT-FOR-THIS-CHALLENGE-GOES-TO-TENESYS-CTF}
 if (isset($_GET['passwd'])) {
 
         if (hash("md5", $_GET['passwd']) == '0e514198428367523082236389979035'){
-            echo "<script>alert('$flag');</script>";
+            echo "Here is your gift :".$flag
         } else {
-            echo "<script>alert('Wrong!');</script>";
+            echo "Get out from here"
     }
 }
 ?>
